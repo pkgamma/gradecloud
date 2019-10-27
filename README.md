@@ -1,6 +1,6 @@
-# Could Grade
+# GradeCloud
 
-Could Grade is a platform that assist teachers with grading paper-based exams and assignments. We utilize Google Cloud Platform's Vision AI service to generate helpful insights for teachers so only minimum time is needed on grading complex problems, streamlining the traditional grading process.
+GradeCloud is a platform that assist teachers with grading paper-based exams and assignments. We utilize Google Cloud Platform's Vision AI service to generate helpful insights for teachers so only minimum time is needed on grading complex problems, streamlining the traditional grading process.
 
 ## Problem
 
