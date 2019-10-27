@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="msapplication-TileColor" content="#E84A27">
+  <meta name="theme-color" content="#4188c9">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <!-- Generated: 2019-04-04 16:55:45 +0200 -->
+  <title>GradeCloud</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+  <script src="./assets/js/require.min.js"></script>
+  <script>
+    requirejs.config({
+      baseUrl: '.'
+    });
+  </script>
+  <!-- Dashboard Core -->
+  <link href="./assets/css/dashboard.css" rel="stylesheet" />
+  <script src="./assets/js/dashboard.js"></script>
+  <!-- c3.js Charts Plugin -->
+  <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/charts-c3/plugin.js"></script>
+  <!-- Google Maps Plugin -->
+  <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/maps-google/plugin.js"></script>
+  <!-- Input Mask Plugin -->
+  <script src="./assets/plugins/input-mask/plugin.js"></script>
+  <!-- Datatables Plugin -->
+  <script src="./assets/plugins/datatables/plugin.js"></script>
+</head>
+
+<body class="">
+  <div class="page">
+    <div class="flex-fill">
+      <div class="header py-4">
+        <div class="container">
+          <div class="d-flex">
+            <a class="header-brand" href="./index.html">
+              <img src="./demo/brand/tabler_student.svg" class="header-brand-img" alt="tabler logo">
+            </a>
+            <div class="d-flex order-lg-2 ml-auto">
+              <div class="nav-item d-none d-md-flex">
+                <a href="https://github.com/tabler/tabler" class="btn btn-sm btn-outline-primary" target="_blank">Submit
+                  New Assignment</a>
+              </div>
+              <div class="dropdown d-none d-md-flex">
+                <a class="nav-link icon" data-toggle="dropdown">
+                  <i class="fe fe-bell"></i>
+                  <span class="nav-unread"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center"
+                      style="background-image: url(demo/faces/male/41.jpg)"></span>
+                    <div>
+                      <strong>Nathan</strong> pushed new commit: Fix page load performance issue.
+                      <div class="small text-muted">10 minutes ago</div>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center"
+                      style="background-image: url(demo/faces/female/1.jpg)"></span>
+                    <div>
+                      <strong>Alice</strong> started new task: Tabler UI design.
+                      <div class="small text-muted">1 hour ago</div>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-item d-flex">
+                    <span class="avatar mr-3 align-self-center"
+                      style="background-image: url(demo/faces/female/18.jpg)"></span>
+                    <div>
+                      <strong>Rose</strong> deployed new version of NodeJS REST Api V3
+                      <div class="small text-muted">2 hours ago</div>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item text-center">Mark all as read</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                  <span class="avatar" style="background-image: url(./demo/faces/pk.jpg)"></span>
+                  <span class="ml-2 d-none d-lg-block">
+                    <span class="text-default">Philip Kuo</span>
+                    <small class="text-muted d-block mt-1">Student</small>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-user"></i> Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-settings"></i> Settings
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="float-right"><span class="badge badge-primary">6</span></span>
+                    <i class="dropdown-icon fe fe-mail"></i> Inbox
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-send"></i> Message
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-help-circle"></i> Need help?
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="dropdown-icon fe fe-log-out"></i> Sign out
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse"
+              data-target="#headerMenuCollapse">
+              <span class="header-toggler-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 ml-auto">
+              <form class="input-icon my-3 my-lg-0">
+                <input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
+                <div class="input-icon-addon">
+                  <i class="fe fe-search"></i>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg order-lg-first">
+              <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link active"><i class="fe fe-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./docs/index.html" class="nav-link"><i class="fe fe-file-text"></i> Ungraded Assignments</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./docs/index.html" class="nav-link"><i class="fe fe-file-text"></i> Past Assignments</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="my-3 my-md-5">
+        <div class="container">
+          <div class="page-header">
+            <h1 class="page-title">
+              Welcome back to GradeCloud Submit, Philip.
+            </h1>
+          </div>
+          <div class="row row-cards">
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="card">
+                <div class="card-body p-3 text-center">
+                  <!-- <div class="text-right text-green">
+                      6%
+                      <i class="fe fe-chevron-up"></i>
+                    </div> -->
+                  <div class="h1 mt-4">25</div>
+                  <div class="text-muted mb-4">Total Submissions</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="card">
+                <div class="card-body p-3 text-center">
+                  <!-- <div class="text-right text-red">
+                      -3%
+                      <i class="fe fe-chevron-down"></i>
+                    </div> -->
+                  <div class="h1 mt-4">1</div>
+                  <div class="text-muted mb-4">Awaiting to Submit</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="card">
+                <div class="card-body p-3 text-center">
+                  <!-- <div class="text-right text-green">
+                      9%
+                      <i class="fe fe-chevron-up"></i>
+                    </div> -->
+                  <div class="h1 mt-4">24</div>
+                  <div class="text-muted mb-4">Graded</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="card">
+                <div class="card-body p-3 text-center">
+                  <!-- <div class="text-right text-green">
+                      3%
+                      <i class="fe fe-chevron-up"></i>
+                    </div> -->
+                  <div class="h1 mt-4">23</div>
+                  <div class="text-muted mb-4">On Time</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="card">
+                <div class="card-body p-3 text-center">
+                  <!-- <div class="text-right text-red">
+                      -2%
+                      <i class="fe fe-chevron-down"></i>
+                    </div> -->
+                  <div class="h1 mt-4">2</div>
+                  <div class="text-muted mb-4">Late</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+              <div class="card">
+                <div class="card-body p-3 text-center">
+                  <!-- <div class="text-right text-red">
+                      -1%
+                      <i class="fe fe-chevron-down"></i>
+                    </div> -->
+                  <div class="h1 mt-4">0</div>
+                  <div class="text-muted mb-4">Did Not Turn In</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Submission Activity</h3>
+                </div>
+                <div id="chart-development-activity" style="height: 10rem"></div>
+                <div class="table-responsive">
+                  <table class="table card-table table-striped table-vcenter">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Assignment</th>
+                        <th>Date Submitted</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!-- <td class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/9.jpg)"></span></td> -->
+                        <td>MATH241</td>
+                        <td>Homework 25</td>
+                        <td class="text-nowrap">May 6, 2019</td>
+                        <td class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <!-- <td><span class="avatar">BM</span></td> -->
+                        <td>MATH241</td>
+                        <td>Homework 24</td>
+                        <td class="text-nowrap">April 22, 2019</td>
+                        <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <!-- <td><span class="avatar" style="background-image: url(./demo/faces/female/1.jpg)"></span></td> -->
+                        <td>ECE351</td>
+                        <td>Essay Written Response</td>
+                        <td class="text-nowrap">April 15, 2019</td>
+                        <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <!-- <td><span class="avatar" style="background-image: url(./demo/faces/male/4.jpg)"></span></td> -->
+                        <td>MATH241</td>
+                        <td>Homework 23</td>
+                        <td class="text-nowrap">April 8, 2019</td>
+                        <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <!-- <td><span class="avatar" style="background-image: url(./demo/faces/female/11.jpg)"></span></td> -->
+                        <td>CS210</td>
+                        <td>Ethics Essay 2</td>
+                        <td class="text-nowrap">April 9, 2019</td>
+                        <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <script>
+                require(['c3', 'jquery'], function (c3, $) {
+                  $(document).ready(function () {
+                    var chart = c3.generate({
+                      bindto: '#chart-development-activity', // id of chart wrapper
+                      data: {
+                        columns: [
+                          // each columns data
+                          ['data1', 3, 3, 3, 3, 4, 4, 3, 2, 2, 3, 4, 4, 4, 4, 4, 4, 3, 3, 2, 3, 2, 4]
+                        ],
+                        type: 'area', // default type of chart
+                        groups: [
+                          ['data1', 'data2', 'data3']
+                        ],
+                        colors: {
+                          'data1': tabler.colors["blue"]
+                        },
+                        names: {
+                          // name of each serie
+                          'data1': 'Submit'
+                        }
+                      },
+                      axis: {
+                        y: {
+                          padding: {
+                            bottom: 0,
+                          },
+                          show: false,
+                          tick: {
+                            outer: false
+                          }
+                        },
+                        x: {
+                          padding: {
+                            left: 0,
+                            right: 0
+                          },
+                          show: false
+                        }
+                      },
+                      legend: {
+                        position: 'inset',
+                        padding: 0,
+                        inset: {
+                          anchor: 'top-left',
+                          x: 20,
+                          y: 8,
+                          step: 10
+                        }
+                      },
+                      tooltip: {
+                        format: {
+                          title: function (x) {
+                            return '';
+                          }
+                        }
+                      },
+                      padding: {
+                        bottom: 0,
+                        left: -1,
+                        right: -1
+                      },
+                      point: {
+                        show: false
+                      }
+                    });
+                  });
+                });
+              </script>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="h5">Late Submission</div>
+                      <div class="display-4 font-weight-bold mb-4">2</div>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-red" style="width: 8%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="h5">On Time Submission</div>
+                      <div class="display-4 font-weight-bold mb-4">23</div>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-green" style="width: 92%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                      <h3 class="card-title">Submit New Assignment</h3>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table card-table table-vcenter text-nowrap datatable">
+                      <thead>
+                        <tr>
+                          <!-- <th class="w-1">No.</th> -->
+                          <th>Subject</th>
+                          <th>Assignment</th>
+                          <!-- <th>VAT No.</th> -->
+                          <th>Due Date</th>
+                          <!-- <th>Status</th> -->
+                          <th></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <!-- <td><span class="text-muted">001401</span></td> -->
+                          <td><a href="invoice.html" class="text-inherit">MATH231</a></td>
+                          <td>
+                            Written Homework 26
+                          </td>
+                          <!-- <td>
+                            87956621
+                          </td> -->
+                          <td>
+                            15 Dec 2017
+                          </td>
+                          <!-- <td>
+                            <span class="status-icon bg-success"></span> Paid
+                          </td>
+                          <td>$887</td> -->
+                          <td class="text-right">
+                            <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Submit</a>
+                            <div class="dropdown">
+                              <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
+                            </div>
+                          </td>
+                          <!-- <td>
+                            <a class="icon" href="javascript:void(0)">
+                              <i class="fe fe-edit"></i>
+                            </a>
+                          </td> -->
+                        </tr>
+                        
+                        <tr>
+                            <!-- <td><span class="text-muted">001401</span></td> -->
+                            <td><a href="invoice.html" class="text-inherit">MATH231</a></td>
+                            <td>
+                              Written Homework 27
+                            </td>
+                            <!-- <td>
+                              87956621
+                            </td> -->
+                            <td>
+                              17 Dec 2017
+                            </td>
+                            <!-- <td>
+                              <span class="status-icon bg-success"></span> Paid
+                            </td>
+                            <td>$887</td> -->
+                            <td class="text-right">
+                              <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Submit</a>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
+                              </div>
+                            </td>
+                            <!-- <td>
+                              <a class="icon" href="javascript:void(0)">
+                                <i class="fe fe-edit"></i>
+                              </a>
+                            </td> -->
+                          </tr>
+                          <tr>
+                              <!-- <td><span class="text-muted">001401</span></td> -->
+                              <td><a href="invoice.html" class="text-inherit">MATH231</a></td>
+                              <td>
+                                Written Homework 28
+                              </td>
+                              <!-- <td>
+                                87956621
+                              </td> -->
+                              <td>
+                                19 Dec 2017
+                              </td>
+                              <!-- <td>
+                                <span class="status-icon bg-success"></span> Paid
+                              </td>
+                              <td>$887</td> -->
+                              <td class="text-right">
+                                <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Submit</a>
+                                <div class="dropdown">
+                                  <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
+                                </div>
+                              </td>
+                              <!-- <td>
+                                <a class="icon" href="javascript:void(0)">
+                                  <i class="fe fe-edit"></i>
+                                </a>
+                              </td> -->
+                            </tr>
+                            <tr>
+                                <!-- <td><span class="text-muted">001401</span></td> -->
+                                <td><a href="invoice.html" class="text-inherit">MATH231</a></td>
+                                <td>
+                                  Written Homework 29
+                                </td>
+                                <!-- <td>
+                                  87956621
+                                </td> -->
+                                <td>
+                                  21 Dec 2017
+                                </td>
+                                <!-- <td>
+                                  <span class="status-icon bg-success"></span> Paid
+                                </td>
+                                <td>$887</td> -->
+                                <td class="text-right">
+                                  <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Submit</a>
+                                  <div class="dropdown">
+                                    <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
+                                  </div>
+                                </td>
+                                <!-- <td>
+                                  <a class="icon" href="javascript:void(0)">
+                                    <i class="fe fe-edit"></i>
+                                  </a>
+                                </td> -->
+                              </tr>
+                              <tr>
+                                  <!-- <td><span class="text-muted">001401</span></td> -->
+                                  <td><a href="invoice.html" class="text-inherit">MATH231</a></td>
+                                  <td>
+                                    Written Homework 30
+                                  </td>
+                                  <!-- <td>
+                                    87956621
+                                  </td> -->
+                                  <td>
+                                    23 Dec 2017
+                                  </td>
+                                  <!-- <td>
+                                    <span class="status-icon bg-success"></span> Paid
+                                  </td>
+                                  <td>$887</td> -->
+                                  <td class="text-right">
+                                    <a href="javascript:void(0)" class="btn btn-secondary btn-sm">Submit</a>
+                                    <div class="dropdown">
+                                      <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">Actions</button>
+                                    </div>
+                                  </td>
+                                  <!-- <td>
+                                    <a class="icon" href="javascript:void(0)">
+                                      <i class="fe fe-edit"></i>
+                                    </a>
+                                  </td> -->
+                                </tr>
+                      </tbody>
+                    </table>
+                    <script>
+                      require(['datatables', 'jquery'], function(datatable, $) {
+                      	    $('.datatable').DataTable();
+                      	  });
+                    </script>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+        <script>
+          require(['jquery'], function () {
+            $(document).ready(function () {
+
+              function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                  var date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+              }
+
+              function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                  var c = ca[i];
+                  while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+              }
+
+              if (!getCookie('bottombar-hidden')) {
+                $('.js-bottombar').show();
+              }
+
+              $('.js-bottombar-close').on('click', function (e) {
+                $('.js-bottombar').hide();
+                setCookie('bottombar-hidden', 1, 7);
+
+                e.preventDefault();
+                return false;
+              });
+            });
+          });
+        </script>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mt-4 mt-lg-0">
+            The University of Illinois System is the flagship higher education system in the state of Illinois.
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-auto ml-lg-auto">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item"><a href="./docs/index.html">All Ungraded Assignments</a></li>
+                  <li class="list-inline-item"><a href="./Platform Help.html">Platform Help</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm">Submit New
+                  Assignment</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+            Copyright © 2019 GradeCloud. Built at <a href="http://daremightythings.co/" target="_blank">Dare Mighty
+              Things Hackathon</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

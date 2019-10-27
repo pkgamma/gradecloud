@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="490px" height="68px" viewBox="0 0 490 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>tabler_student</title>
+    <desc>Created with Sketch.</desc>
+    <g id="tabler_student" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="GothamRounded-Bold, Gotham Rounded" font-size="54" font-weight="bold" letter-spacing="-3.05660377">
+        <text id="GradeCloud-Submit">
+            <tspan x="2" y="50" fill="#E84A27">Grade</tspan>
+            <tspan x="151.794981" y="50" fill="#4A4A4A">Cloud </tspan>
+            <tspan x="311.763358" y="50" font-family="GothamRounded-Book, Gotham Rounded" font-weight="300" fill="#4A4A4A">Submit</tspan>
+        </text>
+    </g>
+</svg>
