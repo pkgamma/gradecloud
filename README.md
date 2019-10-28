@@ -2,7 +2,7 @@
 
 GradeCloud is a platform that assist teachers with grading paper-based exams and assignments. We utilize the powerful image recognition and processing APIs provided by Cloudinary to generate helpful insights for teachers so only minimum time is needed on grading complex problems, streamlining the traditional grading process.
 
-This project was built in 24 hours at the Dare Mighty Things Hackathon 2019 in McDonald's HQ in Chicago, IL.
+This project was built in 24 hours at the Dare Mighty Things Hackathon 2019 in McDonald's HQ in Chicago, IL. *We're one of the winners of the hackathon!*
 
 ## About
 
